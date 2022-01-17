@@ -1,12 +1,12 @@
 import sys
-InF = 2147000000
+INF = 2147000000
 n = int(sys.stdin.readline())
 arr = []
-result = InF
+result = INF
 for _ in range(n):
     arr.append(list(map(int, sys.stdin.readline().split())))
 for i in range(3):
-    d = [[InF, InF, InF] for _ in range(n)]
+    d = [[INF, INF, INF] for _ in range(n)]
     d[0][i] = arr[0][i]
     for j in range(1, n):
         d[j][0] = arr[j][0] + min(d[j - 1][1], d[j - 1][2])

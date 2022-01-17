@@ -16,6 +16,6 @@ for _ in range(t):
     else:
         flag = False
 if flag is False:
-    print('nO')
+    print('NO')
 else:
     print("\n".join(op_arr))
