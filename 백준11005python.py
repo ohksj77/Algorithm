@@ -1,6 +1,6 @@
 import sys
 n, b = map(int, sys.stdin.readline().split())
-word = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+word = '0123456789ABCDEFGHIJKLMnOPQRSTUVWXYZ'
 result = ''
 while n != 0:
     result += str(word[n % b])
